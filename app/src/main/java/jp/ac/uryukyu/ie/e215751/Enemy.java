@@ -34,11 +34,14 @@ public class Enemy {
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        
+        boolean dead = true;
+        if (dead == true){
+            System.out.printf("モンスター%sは倒れた。\n", name);
+        }else{
             int damage = (int)(Math.random() * attack);
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.name, damage);
             hero.wounded(damage);
-        
+        }
     }
 
     /**
