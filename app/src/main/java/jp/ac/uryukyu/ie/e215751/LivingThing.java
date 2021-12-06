@@ -2,9 +2,9 @@ package jp.ac.uryukyu.ie.e215751;
 
 public class LivingThing{
     private String name;
-    private int hitPoint;
+    int hitPoint;
     private int attack;
-    private boolean dead;
+    boolean dead;
 
     public String getName(){
         return this.name;
