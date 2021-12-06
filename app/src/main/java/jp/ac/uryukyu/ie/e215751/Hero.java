@@ -14,9 +14,9 @@ public class Hero extends LivingThing {
     }
     
     public void wounded(int damage){
-        hitPoint -= damage;
-        if( hitPoint < 0 ) {
-            dead = true;
+        super.setHitPoint(super.getHitPoint() - damage);
+        if( super.getHitPoint() < 0 ) {
+            super.setDead(true);
         System.out.printf("勇者%sは道半ばで力尽きてしまった。",this.getName());
         }
         

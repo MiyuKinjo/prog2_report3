@@ -2,9 +2,9 @@ package jp.ac.uryukyu.ie.e215751;
 
 public class LivingThing{
     private String name;
-    int hitPoint;
+    private int hitPoint;
     private int attack;
-    boolean dead;
+    private boolean dead;
 
     public String getName(){
         return this.name;
@@ -26,6 +26,9 @@ public class LivingThing{
     }
     public boolean isDead(){
         return this.dead;
+    }
+    public void setDead(boolean dead){
+        this.dead = dead;
     }
 
     public LivingThing(String name,int hitPoint,int attack){
